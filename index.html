@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Marca Incrível - A Solução Perfeita</title>
+    <style>
+        /* Estilos básicos para a landing page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 4rem 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #218838;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .feature-item {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+        }
+
+        .feature-item h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .testimonial {
+            background-color: #e9ecef;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .testimonial span {
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        .call-to-action-bottom {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 3rem 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .call-to-action-bottom h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-item {
+                width: 90%;
+            }
+
+            .call-to-action-bottom h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sua Marca Incrível</h1>
+            <nav>
+                </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>A Solução Definitiva para o Seu Problema!</h1>
+                <p>Descubra como [Nome da sua Marca/Produto] pode transformar sua vida ou seu negócio hoje mesmo.</p>
+                <a href="#form-section" class="cta-button">Quero Saber Mais!</a>
+            </div>
+        </section>
+
+        <section class="container features">
+            <div class="feature-item">
+                <h3>Benefício 1</h3>
+                <p>Explique de forma concisa o primeiro grande benefício do seu produto/serviço. Use palavras-chave impactantes.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Benefício 2</h3>
+                <p>Detalhe o segundo benefício que o seu público-alvo vai adorar. Seja claro e direto.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Benefício 3</h3>
+                <p>Apresente o terceiro benefício exclusivo que diferencia sua oferta da concorrência.</p>
+            </div>
+        </section>
+
+        <section class="container testimonial">
+            <p>"Nunca pensei que [problema] pudesse ser tão fácil de resolver! [Nome da sua Marca/Produto] superou minhas expectativas."</p>
+            <span>— Cliente Satisfeito, Empresa Fictícia</span>
+        </section>
+
+        <section class="container call-to-action-bottom" id="form-section">
+            <h2>Pronto para Transformar?</h2>
+            <p>Preencha o formulário abaixo e receba acesso exclusivo à nossa demonstração gratuita!</p>
+            <form action="#" method="POST">
+                <p>
+                    <label for="nome" style="color: white;">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome Completo" required style="width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: none;">
+                </p>
+                <p>
+                    <label for="email" style="color: white;">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required style="width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: none;">
+                </p>
+                <p>
+                    <label for="telefone" style="color: white;">Telefone (Opcional):</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" style="width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: none;">
+                </p>
+                <p>
+                    <button type="submit" class="cta-button" style="width: 100%; margin-top: 20px;">Receber Acesso Agora!</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sua Marca Incrível. Todos os direitos reservados.</p>
+            <p><a href="#" style="color: white;">Política de Privacidade</a> | <a href="#" style="color: white;">Termos de Uso</a></p>
+        </div>
+    </footer>
+</body>
+</html>
